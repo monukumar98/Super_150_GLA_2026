@@ -18,8 +18,11 @@ public class Student_Clinet {
 		s1.SayHey("Raju");
 		Student.Mentor_Name();
 		// s1.Mentor_Name();
-		
 
+	}
+
+	static {
+		System.out.println("In Main Method");
 	}
 
 }
