@@ -35,10 +35,22 @@ public class Delete_Node_in_a_BST {
 					return root.right;
 				} else if (root.right == null) {
 					return root.left;
+				} else {
+					int max = max(root.left);
+					root.left = deleteNode(root.left, max);
+					root.val = max;
 				}
 			}
-			return null;
+			return root;
 		}
+	}
+
+	public int max(TreeNode root) {
+		if (root == null) {
+			return Integer.MIN_VALUE;
+		}
+		int rmax = max(root.right);
+		return Math.max(root.val, rmax);
 	}
 
 }
