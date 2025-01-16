@@ -2,7 +2,6 @@ package Lec64;
 
 import java.util.*;
 
-import Lec64.Dijkstra_Algorithm.DijkstraPair;
 
 public class Dijkstra_Algorithm {
 	HashMap<Integer, HashMap<Integer, Integer>> map;
