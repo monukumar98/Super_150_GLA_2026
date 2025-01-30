@@ -79,7 +79,7 @@ public class Nearest_Meeting_Cell {
 				dis[node] = d;
 			}
 			for (int nbrs : map.get(node)) {
-				if (dis[nbrs] == Long.MAX_VALUE) {
+				if (nbrs!=-1 && dis[nbrs] == Long.MAX_VALUE) {
 					pq.add(new Pair(d + 1, nbrs));
 				}
 			}
