@@ -51,7 +51,7 @@ public class Nearest_Meeting_Cell2 {
 				A[r] = dis;
 			}
 			int nbrs = edges[r];
-			if (A[nbrs] == Long.MAX_VALUE) {
+			if (nbrs!=-1 && A[nbrs] == Long.MAX_VALUE) {
 				q.add(nbrs);
 				dis++;
 			}
