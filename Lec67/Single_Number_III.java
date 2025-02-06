@@ -13,6 +13,16 @@ public class Single_Number_III {
 			ans ^= arr[i];
 		}
 		// ans = 110;
+		int mask = (ans & (~(ans - 1)));
+		int a = 0;
+		for (int i = 0; i < arr.length; i++) {
+			if ((arr[i] & mask) != 0) {
+				a ^= arr[i];
+			}
+		}
+		int b = ans ^ a;
+		return new int[] { a, b };
+
 	}
 
 }
