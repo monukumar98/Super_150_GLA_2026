@@ -1,4 +1,4 @@
-package Lec74;
+package Lec75;
 
 import java.util.Scanner;
 
