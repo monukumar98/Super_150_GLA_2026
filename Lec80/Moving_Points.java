@@ -35,8 +35,8 @@ public class Moving_Points {
 			long prefix = 0;
 
 			for (int i = 0; i < ll.size(); i++) {
-				ans += ((long)ll.get(i)) * i - prefix);
-				prefix =prefix+ ll.get(i);
+				ans += ((long) ll.get(i)) * i - prefix;
+				prefix = prefix + ll.get(i);
 			}
 
 		}
@@ -68,7 +68,7 @@ public class Moving_Points {
 			int idx = speed_with_index.get(p.v);
 			long coutX = ftx.query(idx - 1);
 			long prefixsum = ftsum.query(idx - 1);
-			ans =ans+ ((p.x * coutX) - prefixsum);
+			ans = ans + ((p.x * coutX) - prefixsum);
 			ftx.update(1, idx);
 			ftsum.update(p.x, idx);
 
